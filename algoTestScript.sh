@@ -121,7 +121,7 @@ then
      echo "Passed: $passed/$numberOfTests"
 elif [ -n "$COMSPEC" -a -x "$COMSPEC" ]
 then
-    echo $0: this script does not support OS 
+    echo $0: This script does not support this OS 
 fi
 
 exit
