@@ -53,7 +53,7 @@ if [ "$(uname)" == "Darwin" ];
                 # program executed without error
                 if [ $retval -eq 0 ]
                 then
-                    # if there is difference int outputs print it
+                    # if there is difference in outputs print it
                     if [ "$DIFF" != "" ]
                     then
                         echo "Testcase$i: Wrong Output"
@@ -119,10 +119,9 @@ then
                 fi
             done
      echo "Passed: $passed/$numberOfTests"
-# Write a batch script man
 elif [ -n "$COMSPEC" -a -x "$COMSPEC" ]
 then
-    echo $0: this script does not support Windows 
+    echo $0: this script does not support OS 
 fi
 
 exit
